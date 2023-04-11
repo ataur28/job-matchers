@@ -1,6 +1,6 @@
 [
     {
-      "id": "1",
+      "id": 1,
       "logo": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1527&q=80",
       "title": "Technical Database Engineer",
       "name": "Google LLC",
@@ -16,7 +16,7 @@
       "phone": "+1 (965) 581-3258"
     },
     {
-      "id": "2",
+      "id": 2,
       "logo": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
       "title": "Senior Product Designer",
       "name": "Netflix",
@@ -32,7 +32,7 @@
       "phone": "+1 (810) 436-3808"
     },
     {
-      "id": "3",
+      "id": 3,
       "logo": "https://images.unsplash.com/photo-1612810806695-30f7a8258391?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
       "title": "Software Engineer",
       "name": "Tesla",
@@ -48,7 +48,7 @@
       "phone": "+1 (830) 489-3405"
     },
     {
-      "id": "4",
+      "id": 4,
       "logo": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1527&q=80",
       "title": "Technical Database Engineer",
       "name": "Google LLC",
@@ -64,7 +64,7 @@
       "phone": "+1 (892) 467-3871"
     },
     {
-      "id": "5",
+      "id": 5,
       "logo": "https://media.istockphoto.com/id/912704504/photo/teamwork-business-five-people-group-3d-render-illustration.webp?s=2048x2048&w=is&k=20&c=H8YIkih2CLAx19vgaEiYO1nAQqr5TobeGu-Wybr840g=",
       "title": "Senior Java Software Engineer",
       "name": "SIMEC Group",
@@ -80,7 +80,7 @@
       "phone": "+1 (822) 468-2447"
     },
     {
-      "id": "6",
+      "id": 6,
       "logo": "https://media.istockphoto.com/id/912704504/photo/teamwork-business-five-people-group-3d-render-illustration.webp?s=2048x2048&w=is&k=20&c=H8YIkih2CLAx19vgaEiYO1nAQqr5TobeGu-Wybr840g=",
       "title": "Embedded Engineer",
       "name": "Hydroquo+",

@@ -1,9 +1,12 @@
 import React from 'react';
 import './JobDetails.css'
+// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import ActiveLink from '../ActiveLink/ActiveLink';
 
 const JobDetails = ({ job }) => {
-    console.log(job);
-    const { logo, title, name, jobTime, jobCategory, location, salary } = job;
+    // console.log(job);
+    const {id, logo, title, name, jobTime, jobCategory, location, salary } = job;
     return (
         <div>
             <div className='job-feature-item'>
@@ -18,7 +21,9 @@ const JobDetails = ({ job }) => {
                     <p className='primary-text'>{location}</p>
                     <p className='primary-text'>Salary: {salary}</p>
                 </div>
-                <button className='view-btn'>View Details</button>
+                {/* <p><a href={`/job/${id}`}>View Details</a></p>
+                <p><ActiveLink to={`/job/${id}`}>View Details</ActiveLink></p> */}
+                <Link to={`/job/${id}`}><button className='view-btn'>View Details</button></Link>
             </div>
 
         </div>
