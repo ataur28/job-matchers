@@ -23,7 +23,7 @@ const Statistic = () => {
                     }
                     return assignmentInfo;
                 })
-                console.log(assignmentMark);
+                // console.log(assignmentMark);
                 setMarks(assignmentMark);
             })
 

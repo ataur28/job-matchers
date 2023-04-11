@@ -3,6 +3,7 @@ import './First.css'
 import profile from '../../../public/profile-pic.png'
 import JobCategory from '../JobCategory/JobCategory';
 import { useLoaderData } from 'react-router-dom';
+import JobFeatures from '../JobFeatures/JobFeatures';
 
 const First = () => {
     // const job = useLoaderData();
@@ -22,6 +23,9 @@ const First = () => {
 
             <section>
                 <JobCategory></JobCategory>
+            </section>
+            <section>
+                <JobFeatures></JobFeatures>
             </section>
 
         </div>
