@@ -2,8 +2,11 @@ import React from 'react';
 import './First.css'
 import profile from '../../../public/profile-pic.png'
 import JobCategory from '../JobCategory/JobCategory';
+import { useLoaderData } from 'react-router-dom';
 
 const First = () => {
+    // const job = useLoaderData();
+    // console.log(job);
     return (
         <div>
             <div className='header-first-section'>
