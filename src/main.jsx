@@ -12,6 +12,7 @@ import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
 import ErrorElement from './components/ErrorElement/ErrorElement';
 import First from './components/First/First';
+import JobCategory from './components/JobCategory/JobCategory';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <First></First>
+      },
+      {
+        path: 'job-category',
+        element: <JobCategory></JobCategory>
       },
       {
         path: 'statistics',
