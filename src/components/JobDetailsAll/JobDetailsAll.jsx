@@ -7,14 +7,12 @@ import { addToDb } from '../../utilities/fakedb';
 
 const JobDetailsAll = () => {
     const { jobId } = useParams();
-    // const jobs = useLoaderData();
     // console.log(jobs)
     const [details, setDetails] = useState(useLoaderData());
     // console.log(details);
 
     const job = details.find((job) => job.id == jobId)
     // console.log(job)
-    // setJobs(jobDetails);
     const { jobDescription, jobResponsibility, requirement, experiences, salary, title, phone, email, location } = job;
     // console.log(jobId);
     const [jobs, setJobs] = useState([])
