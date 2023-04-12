@@ -9,6 +9,10 @@ const AppliedJobs = () => {
     return (
         <div>
             <h1>applied job: {jobs.length}</h1>
+            <div className='filter-btn'>
+                    <button className='primary-btn'>Full Time</button>
+                    <button className='primary-btn'>Part Time</button>
+                </div>
             <div>
                 {
                    jobs.map(job => <ReviewJob
