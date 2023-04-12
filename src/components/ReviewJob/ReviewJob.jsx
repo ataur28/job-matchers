@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 const ReviewJob = ({ job }) => {
 
     const {id, logo, title, name, jobTime, jobCategory, location, salary } = job;
-    // console.log(job)
     return (
         <div className='review-job'>
             <img className='review-img' src={logo} alt="" />

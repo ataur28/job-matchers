@@ -28,8 +28,6 @@ const JobDetails = ({ job }) => {
                     <p className='primary-text'><FontAwesomeIcon icon={faLocation} /> {location}</p>
                     <p className='primary-text'><FontAwesomeIcon icon={faDollar} /> Salary: {salary}</p>
                 </div>
-                {/* <p><a href={`/job/${id}`}>View Details</a></p>
-                <p><ActiveLink to={`/job/${id}`}>View Details</ActiveLink></p> */}
                 <Link to={`/job/${id}`}><button className='view-btn'>View Details</button></Link>
             </div>
 
