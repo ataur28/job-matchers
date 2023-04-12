@@ -9,6 +9,11 @@ import { faDollar, faLocation } from '@fortawesome/free-solid-svg-icons'
 const JobDetails = ({ job }) => {
     // console.log(job);
     const { id, logo, title, name, jobTime, jobCategory, location, salary } = job;
+
+    // const handleAddToCart = (job) => {
+    //     console.log(job)
+    // }
+
     return (
         <div>
             <div className='job-feature-item'>

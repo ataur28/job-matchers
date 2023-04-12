@@ -3,20 +3,30 @@ import './JobDetailsAll.css'
 import { useLoaderData, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDollar, faLocation, faBook, faPhone, faMailBulk } from '@fortawesome/free-solid-svg-icons'
+import { addToDb } from '../../utilities/fakedb';
 
 const JobDetailsAll = () => {
     const { jobId } = useParams();
     // const jobs = useLoaderData();
     // console.log(jobs)
     const [details, setDetails] = useState(useLoaderData());
-    console.log(details);
+    // console.log(details);
 
     const job = details.find((job) => job.id == jobId)
-    console.log(job)
+    // console.log(job)
     // setJobs(jobDetails);
     const { jobDescription, jobResponsibility, requirement, experiences, salary, title, phone, email, location } = job;
+    // console.log(jobId);
+    const [jobs, setJobs] = useState([])
 
-    console.log(jobId);
+    const handleAddToCart = (job) => {
+        console.log(job)
+        const newJobs = [...jobs, job];
+        setJobs(newJobs);
+        console.log(newJobs)
+        addToDb(job.id);
+    }
+
     return (
         <div>
             <div>
@@ -44,7 +54,7 @@ const JobDetailsAll = () => {
                         <p className='job-details-primary-text'><span className='text-bold'><FontAwesomeIcon className='icon' icon={faMailBulk } />Email : </span>{email}</p>
                         <p className='job-details-primary-text'><span className='text-bold'><FontAwesomeIcon className='icon' icon={faLocation} /> Address : </span>{location}</p>
                     </div>
-                    <button className='apply-btn'>Apply Now</button>
+                    <button onClick={() => handleAddToCart (job)} className='apply-btn'>Apply Now</button>
                 </div>
             </div>
         </div>

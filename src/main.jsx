@@ -14,6 +14,7 @@ import ErrorElement from './components/ErrorElement/ErrorElement';
 import First from './components/First/First';
 import JobCategory from './components/JobCategory/JobCategory';
 import JobDetailsAll from './components/JobDetailsAll/JobDetailsAll';
+import jobsLoader from './loaders/jobsLoader';
 
 const router = createBrowserRouter([
   {
@@ -43,7 +44,9 @@ const router = createBrowserRouter([
       },
       {
         path: 'applied-job',
-        element: <AppliedJobs></AppliedJobs>
+        element: <AppliedJobs></AppliedJobs>,
+        // loader: () => fetch('/jobFeature.json')
+        loader: jobsLoader,
       },
       {
         path: 'blog',
@@ -51,7 +54,7 @@ const router = createBrowserRouter([
       },
       {
         path: '*',
-        element: <div>44444444444440444444444444</div>
+        element: <div>Error : 44444444444440444444444444</div>
       }
     ]
   }

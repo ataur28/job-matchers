@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './JobFeatures.css'
 import JobDetails from '../JobDetails/JobDetails';
+import JobDetailsAll from '../JobDetailsAll/JobDetailsAll';
 
 const JobFeatures = () => {
     const [jobs, setJobs] = useState([]);
@@ -11,7 +12,7 @@ const JobFeatures = () => {
             .then(data => setJobs(data))
     }, []);
 
-    // console.log(jobs);
+
 
     return (
         <div>
