@@ -3,10 +3,12 @@ import './JobDetails.css'
 // import { Link } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import ActiveLink from '../ActiveLink/ActiveLink';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDollar, faLocation } from '@fortawesome/free-solid-svg-icons'
 
 const JobDetails = ({ job }) => {
     // console.log(job);
-    const {id, logo, title, name, jobTime, jobCategory, location, salary } = job;
+    const { id, logo, title, name, jobTime, jobCategory, location, salary } = job;
     return (
         <div>
             <div className='job-feature-item'>
@@ -18,8 +20,8 @@ const JobDetails = ({ job }) => {
                     <button className='primary-btn'>{jobTime}</button>
                 </div>
                 <div className='job-location-salary'>
-                    <p className='primary-text'>{location}</p>
-                    <p className='primary-text'>Salary: {salary}</p>
+                    <p className='primary-text'><FontAwesomeIcon icon={faLocation} /> {location}</p>
+                    <p className='primary-text'><FontAwesomeIcon icon={faDollar} /> Salary: {salary}</p>
                 </div>
                 {/* <p><a href={`/job/${id}`}>View Details</a></p>
                 <p><ActiveLink to={`/job/${id}`}>View Details</ActiveLink></p> */}

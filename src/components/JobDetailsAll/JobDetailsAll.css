@@ -1,11 +1,21 @@
-.job-details-container{
+.banner-title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    color: #1A1919;
+}
+
+.job-details-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.job-details-dec{
+
+.job-details-dec {
     padding: 20px;
 }
+
 .job-details-primary-text {
     font-family: 'Manrope';
     font-style: normal;
@@ -29,18 +39,18 @@
     color: #1A1919;
 }
 
-.job-details-info{
-    background-color:  rgba(152, 115, 255, 0.1) ;
+.job-details-info {
+    background-color: rgba(152, 115, 255, 0.1);
     padding: 20px;
     border-radius: 8px;
-    
+
 }
 
-.hr{
+.hr {
     border: 1px solid #7E90FE;
 }
 
-.apply-btn{
+.apply-btn {
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
     border-radius: 8px;
     padding: 20px;
@@ -49,7 +59,11 @@
     font-weight: 800;
     font-size: 20px;
     /* color: #FFFFFF !important;  */
-    color: #FFFFFF; 
+    color: #FFFFFF;
     width: 100%;
     margin-top: 20px;
+}
+
+.icon {
+    color: #7E90FE;
 }
