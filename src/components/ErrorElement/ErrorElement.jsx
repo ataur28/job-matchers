@@ -3,7 +3,8 @@ import React from 'react';
 const ErrorElement = () => {
     return (
         <div>
-            <h1>4440444</h1>
+            <h1>Error</h1>
+            <h1>404</h1>
         </div>
     );
 };

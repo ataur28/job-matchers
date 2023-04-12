@@ -8,17 +8,19 @@ const AppliedJobs = () => {
     console.log(jobs)
     return (
         <div>
-            <h1>applied job: {jobs.length}</h1>
+            <div className='banner'>
+                <h1 className='banner-title'>Applied Job</h1>
+            </div>
             <div className='filter-btn'>
-                    <button className='primary-btn'>Full Time</button>
-                    <button className='primary-btn'>Part Time</button>
-                </div>
+                <button className='primary-btn'>Full Time</button>
+                <button className='primary-btn'>Part Time</button>
+            </div>
             <div>
                 {
-                   jobs.map(job => <ReviewJob
-                   key={job.id}
-                   job={job}
-                   ></ReviewJob>) 
+                    jobs.map(job => <ReviewJob
+                        key={job.id}
+                        job={job}
+                    ></ReviewJob>)
                 }
             </div>
         </div>

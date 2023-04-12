@@ -31,6 +31,9 @@ const Statistic = () => {
 
     return (
         <div>
+            <div className='banner'>
+                <h1 className='banner-title'>Statistic</h1>
+            </div>
             <h3>Assignment Mark Area Chart</h3>
             {/* <BarChart width={1000} height={500} data={mark}>
                 <Bar dataKey="mark" fill='#8884d8'></Bar>

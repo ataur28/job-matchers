@@ -4,6 +4,9 @@ import './Blog.css'
 const Blog = () => {
     return (
         <div>
+            <div className='banner'>
+                <h1 className='banner-title'>Blog</h1>
+            </div>
             <h2>Question and Answer </h2>
             <div className='question-answer'>
                 <h3>Question-1: When should you use context API?</h3>
