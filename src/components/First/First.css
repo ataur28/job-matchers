@@ -44,3 +44,13 @@
 .profile-img {
     width: 100%;
 }
+
+/*------------------------------
+     small device media query start
+-------------------------------- */
+
+@media only screen and (max-width:576px) {
+    .header-first-section{
+        flex-direction: column;
+    }
+}

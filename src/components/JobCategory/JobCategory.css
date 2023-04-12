@@ -25,3 +25,13 @@
     text-align: left;
     
 }
+
+/*------------------------------
+     small device media query start
+-------------------------------- */
+
+@media only screen and (max-width:576px) {
+    .job-category-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

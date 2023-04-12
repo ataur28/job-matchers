@@ -32,3 +32,13 @@
     width: 180px;
     margin-top: 30px;
 }
+
+/*------------------------------
+     small device media query start
+-------------------------------- */
+
+@media only screen and (max-width:576px) {
+    .job-feature-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

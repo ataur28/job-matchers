@@ -1,5 +1,5 @@
 .review-job {
-    height: 300px;
+    /* height: 300px; */
     border: 1px solid #E8E8E8;
     margin: 12px 0px;
     border-radius: 8px;
@@ -56,4 +56,19 @@
 
 .review-btn{
     margin-right: 15px;
+}
+
+
+/*------------------------------
+     small device media query start
+-------------------------------- */
+
+@media only screen and (max-width:576px) {
+    .review-job{
+        flex-direction: column;
+    }
+
+    .review-btn{
+        margin-bottom: 15px;
+    }
 }
