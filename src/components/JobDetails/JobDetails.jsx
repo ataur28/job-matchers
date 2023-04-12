@@ -1,6 +1,5 @@
 import React from 'react';
 import './JobDetails.css'
-// import { Link } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import ActiveLink from '../ActiveLink/ActiveLink';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
